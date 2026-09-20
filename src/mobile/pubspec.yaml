@@ -1,0 +1,26 @@
+name: civicroute_mobile
+description: "CivicRoute Citizen Mobile Application — Dynamic Civic Complaint Routing & Accountability Platform"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  http: ^1.2.0
+  image_picker: ^1.1.2
+  geolocator: ^11.0.0
+  flutter_map: ^8.3.2
+  latlong2: ^0.10.1
+  shared_preferences: ^2.5.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,193 @@
+{
+  "info": {
+    "_postman_id": "c1a2b3c4-d5e6-7890-abcd-ef1234567890",
+    "name": "CivicRoute API Engine — Mysuru Governance",
+    "description": "Complete Postman API Collection for testing CivicRoute FastAPI Endpoints, Auth, Cloudinary Image Uploads, Complaint Routing, SLA Escalation, and City Analytics.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "System Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/health",
+          "host": ["{{base_url}}"],
+          "path": ["api", "health"]
+        }
+      }
+    },
+    {
+      "name": "Auth — Register User",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Sujal Citizen\",\n  \"email\": \"sujal@mysuru.org\",\n  \"password\": \"mysuru123\",\n  \"role\": \"citizen\",\n  \"phone\": \"+91 98450 99999\",\n  \"ward_id\": \"WARD-42\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/auth/register",
+          "host": ["{{base_url}}"],
+          "path": ["api", "auth", "register"]
+        }
+      }
+    },
+    {
+      "name": "Auth — Login User",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"citizen@civicroute.org\",\n  \"password\": \"password123\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/auth/login",
+          "host": ["{{base_url}}"],
+          "path": ["api", "auth", "login"]
+        }
+      }
+    },
+    {
+      "name": "Complaints — Get All Complaints",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/complaints?jurisdiction_version=V3",
+          "host": ["{{base_url}}"],
+          "path": ["api", "complaints"],
+          "query": [
+            { "key": "jurisdiction_version", "value": "V3" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Complaints — Create New Complaint (Auto-Routed)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"category\": \"Pothole\",\n  \"description\": \"Large crater pothole near Agrahara Circle causing traffic hazard.\",\n  \"latitude\": 12.3052,\n  \"longitude\": 76.6553,\n  \"address\": \"Agrahara Circle, Ward 42, Mysuru\",\n  \"image_url\": \"https://images.unsplash.com/photo-1515162816999-a0c47dc192f7\",\n  \"jurisdiction_version\": \"V3\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/complaints",
+          "host": ["{{base_url}}"],
+          "path": ["api", "complaints"]
+        }
+      }
+    },
+    {
+      "name": "Complaints — Get Single Complaint Details & Chain",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/complaints/HM-1024",
+          "host": ["{{base_url}}"],
+          "path": ["api", "complaints", "HM-1024"]
+        }
+      }
+    },
+    {
+      "name": "Complaints — Officer Status Update & Proof Upload",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"status\": \"Resolved\",\n  \"officer_notes\": \"Road patch completed with asphalt paving by field crew.\",\n  \"after_image_url\": \"https://images.unsplash.com/photo-1584467735871-8e85353a8413\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/complaints/HM-1024/status",
+          "host": ["{{base_url}}"],
+          "path": ["api", "complaints", "HM-1024", "status"]
+        }
+      }
+    },
+    {
+      "name": "Complaints — Reopen Complaint (Citizen)",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"reason\": \"Pothole patch broke after rain\",\n  \"additional_notes\": \"Ground situation requires deeper asphalt layer.\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/complaints/HM-1024/reopen",
+          "host": ["{{base_url}}"],
+          "path": ["api", "complaints", "HM-1024", "reopen"]
+        }
+      }
+    },
+    {
+      "name": "Cloudinary — Upload Image to Cloud Storage",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"image_base64\": \"data:image/jpeg;base64,/9j/4AAQSkZJRg...\",\n  \"folder\": \"civicroute_evidence\"\n}"
+        },
+        "url": {
+          "raw": "{{base_url}}/api/upload",
+          "host": ["{{base_url}}"],
+          "path": ["api", "upload"]
+        }
+      }
+    },
+    {
+      "name": "Routing Engine — Test Dynamic Routing Query",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/route?latitude=12.3051&longitude=76.6551&category=Pothole&version=V3",
+          "host": ["{{base_url}}"],
+          "path": ["api", "route"],
+          "query": [
+            { "key": "latitude", "value": "12.3051" },
+            { "key": "longitude", "value": "76.6551" },
+            { "key": "category", "value": "Pothole" },
+            { "key": "version", "value": "V3" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "City Governance Analytics",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/api/analytics",
+          "host": ["{{base_url}}"],
+          "path": ["api", "analytics"]
+        }
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+/* ==========================================================================
+   CivicRoute — Strict Neumorphism Design System (Soft UI)
+   ========================================================================== */
+
+:root {
+  --bg-color: #e6ecf5;
+  --surface-color: #e6ecf5;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --primary: #2563eb;
+  --primary-glow: rgba(37, 99, 235, 0.4);
+  --success: #16a34a;
+  --warning: #d97706;
+  --danger: #dc2626;
+
+  /* Neumorphic Shadows (Light Mode) */
+  --neu-flat: 8px 8px 16px #c3cee0, -8px -8px 16px #ffffff;
+  --neu-flat-sm: 4px 4px 10px #c3cee0, -4px -4px 10px #ffffff;
+  --neu-pressed: inset 4px 4px 8px #c3cee0, inset -4px -4px 8px #ffffff;
+  --neu-pressed-sm: inset 2px 2px 5px #c3cee0, inset -2px -2px 5px #ffffff;
+  --neu-convex: linear-gradient(145deg, #f6ffff, #cfd7e4);
+  --neu-concave: linear-gradient(145deg, #cfd7e4, #f6ffff);
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 9999px;
+  
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Neumorphic Base Utilities
+   -------------------------------------------------------------------------- */
+.neu-card {
+  background: var(--bg-color);
+  box-shadow: var(--neu-flat);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.neu-card-sm {
+  background: var(--bg-color);
+  box-shadow: var(--neu-flat-sm);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+}
+
+.neu-card-convex {
+  background: var(--neu-convex);
+  box-shadow: var(--neu-flat);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+.neu-card-concave {
+  background: var(--neu-concave);
+  box-shadow: var(--neu-flat);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Tactile Neumorphic Buttons
+   -------------------------------------------------------------------------- */
+.neu-button {
+  background: var(--bg-color);
+  box-shadow: var(--neu-flat-sm);
+  border-radius: var(--radius-sm);
+  border: none;
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.15s ease-in-out;
+}
+
+.neu-button:hover {
+  transform: translateY(-1px);
+  color: var(--primary);
+}
+
+.neu-button:active, .neu-button.active {
+  box-shadow: var(--neu-pressed-sm);
+  transform: translateY(0);
+  color: var(--primary);
+}
+
+.neu-button-primary {
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+  color: #ffffff !important;
+  box-shadow: 4px 4px 10px #c3cee0, -4px -4px 10px #ffffff;
+}
+
+.neu-button-primary:hover {
+  box-shadow: 6px 6px 14px #c3cee0, -6px -6px 14px #ffffff;
+}
+
+.neu-button-primary:active {
+  box-shadow: inset 3px 3px 6px #1e40af, inset -3px -3px 6px #3b82f6;
+}
+
+/* --------------------------------------------------------------------------
+   Neumorphic Input & Form Elements
+   -------------------------------------------------------------------------- */
+.neu-input {
+  background: var(--bg-color);
+  box-shadow: var(--neu-pressed-sm);
+  border-radius: var(--radius-sm);
+  border: none;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  width: 100%;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.neu-input:focus {
+  box-shadow: var(--neu-pressed), 0 0 0 2px var(--primary-glow);
+}
+
+.neu-select {
+  background: var(--bg-color);
+  box-shadow: var(--neu-flat-sm);
+  border-radius: var(--radius-sm);
+  border: none;
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  outline: none;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------
+   Pill Tabs & Status Badges
+   -------------------------------------------------------------------------- */
+.neu-pill-container {
+  background: var(--bg-color);
+  box-shadow: var(--neu-pressed-sm);
+  border-radius: var(--radius-pill);
+  padding: 0.35rem;
+  display: inline-flex;
+  gap: 0.35rem;
+}
+
+.neu-pill {
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: transparent;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.neu-pill.active {
+  background: var(--bg-color);
+  box-shadow: var(--neu-flat-sm);
+  color: var(--primary);
+}
+
+.neu-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  box-shadow: var(--neu-flat-sm);
+}
+
+.neu-badge-success { color: var(--success); }
+.neu-badge-warning { color: var(--warning); }
+.neu-badge-danger { color: var(--danger); }
+.neu-badge-primary { color: var(--primary); }
+
+/* Glow Status LED Indicator */
+.led-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.led-success { background: #16a34a; box-shadow: 0 0 8px #16a34a; }
+.led-warning { background: #d97706; box-shadow: 0 0 8px #d97706; }
+.led-danger { background: #dc2626; box-shadow: 0 0 8px #dc2626; }
+.led-primary { background: #2563eb; box-shadow: 0 0 8px #2563eb; }
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}

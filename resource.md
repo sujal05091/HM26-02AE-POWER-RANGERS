@@ -1,18 +1,8 @@
 # HackMysuru 1.0 — Phase 1 Submission Index
 
-> **This is the landing file for your submission.** Reviewers open this file first.
-> Every evaluation artifact is uploaded to **Google Drive** and linked below. No files in the repo, no other platforms.
-> Freeze: **20 September 2026, 23:59 IST.** Anything not linked here before the freeze does not exist for judging.
-
-<!--
-HOW TO FILL THIS FILE
-1. Replace every <placeholder>. Delete these HTML comments if you like (they don't render on GitHub).
-2. Use a PERSONAL Gmail account for uploads. Many college Google Workspace accounts block
-   "Anyone with the link" sharing outside the college domain, and reviewers will see "Request access".
-3. Share each FILE (not a folder) as: General access → "Anyone with the link" → Viewer.
-4. Test every link in an incognito/private window before the deadline.
-5. Do not replace or re-upload a file after the freeze. Reviewers compare the SHA-256 below.
--->
+> **This is the central landing file for team submission.** Reviewers open this file first.
+> All external evaluation artifacts are uploaded to **Google Drive** and linked below.
+> Freeze: **20 September 2026, 23:59 IST.**
 
 ---
 
@@ -20,26 +10,26 @@ HOW TO FILL THIS FILE
 
 | Field | Value |
 |---|---|
-| Team ID (from dashboard) | `<HM1-XXXX>` |
-| Team Name | `<team name>` |
-| College(s) | `<college name(s)>` |
-| Team Leader | `<name>` · `<email>` · `<phone>` |
-| Repository | `<https://github.com/org-or-user/repo>` |
+| Team ID (from dashboard) | `HM26-02AE` |
+| Team Name | `Power Rangers` |
+| College(s) | `Shri Madhwa Vadiraja Institute of Technology & Management (SMVITM), Bantakal, Udupi` |
+| Team Leader | `Sujal` · `sujalUDUPI@gmail.com` · `+91 6360577780` |
+| Repository | `https://github.com/sujal05091/HM26-02AE-POWER-RANGERS` |
 
 | # | Member | Program & Year | GitHub Handle | Primary Role |
 |---|---|---|---|---|
-| 1 | `<name>` (Lead) | `<B.E. CSE, 3rd yr>` | `@<handle>` | `<backend / ML / frontend / ...>` |
-| 2 | `<name>` | `<...>` | `@<handle>` | `<...>` |
-| 3 | `<name>` | `<...>` | `@<handle>` | `<...>` |
-| 4 | `<name>` | `<...>` | `@<handle>` | `<...>` |
+| 1 | Sujal (Lead) | B.E. AI & DS, 4th yr | `@sujal` | Full Stack, Flutter App & Spatial Routing Engine |
+| 2 | Hitesh A | B.E. AI & DS, 4th yr | `@Hiteshacu` | Web Governance Portal & UI/UX Architecture |
+| 3 | Shama Patwardhan | B.E. AI & DS, 4th yr | `@Shama-patwardhan` | FastAPI Backend, Firebase Sync & Cloudinary CDN |
+| 4 | Yathika P Amin | B.E. AI & DS, 4th yr | `@yathikapamin` | Mobile App Testing, AI Classifier & Spatial Geofencing |
 
 ---
 
 ## 2. What We Built (one-liner)
 
-**Sub-problem:** `<Routing | Follow-through | Visibility | Verification | Detection without reporting | Segregation drift | Hotspot pattern-finding | Field worker feedback loop | Own: ____>`
+**Sub-problem:** `Dynamic Civic Complaint Routing, Ward Geofencing & SLA Accountability Engine`
 
-**In one sentence:** `<e.g. "An offline-first reporting app that auto-routes complaints to MCC, town panchayat or gram panchayat using ward boundaries and issue type, with a confidence score for boundary cases.">`
+**In one sentence:** `An AI-powered offline-resilient mobile app and neumorphic governance portal that auto-routes citizen defect reports to Mysuru City Corporation (MCC) ward officers using spatial polygon boundaries (V1/V2/V3), Cloudinary evidence storage, and transparent 24-hour SLA escrow tracking.`
 
 ---
 
@@ -47,45 +37,46 @@ HOW TO FILL THIS FILE
 
 | Document | What it covers |
 |---|---|
-| [README.md](./README.md) | Problem, users, solution overview, links to everything below |
-| [ai.md](./ai.md) | AI tools used in development and AI/ML inside the product |
-| [docs/architecture.md](./docs/architecture.md) | Diagram, components, data model, APIs, tech stack |
-| [docs/constraints.md](./docs/constraints.md) | How we handle the five hard constraints |
-| [docs/setup.md](./docs/setup.md) | Local setup, seed data, offline testing |
-| [docs/limitations.md](./docs/limitations.md) | Known gaps, edge cases, scaling roadmap |
-| [resource-templates/](./resource-templates/) | Templates & guides for the video, decision log, and presentation |
+| [README.md](./README.md) | Problem understanding, target user personas, 4-step core journey, architecture, setup & limitations |
+| [ai.md](./ai.md) | AI tools used during development & runtime AI Vision Classifier specs |
+| [docs/architecture.md](./docs/architecture.md) | Mermaid system architecture, component breakdown, ER data model, API endpoints, tech stack rationale |
+| [docs/constraints.md](./docs/constraints.md) | Defense & verification against all 5 hard constraints (fake reports, jurisdiction, SLA formula, bad input, offline mode) |
+| [docs/setup.md](./docs/setup.md) | Local run instructions for FastAPI backend, Vite dashboard, Flutter app, and Firebase Firestore seed script |
+| [docs/limitations.md](./docs/limitations.md) | Known edge cases, scale limits (65+ wards, Dasara traffic), and technical roadmap |
+| [docs/development/](./docs/development/) | Custom development specifications (PRD, SRS, UI-UX, Architecture, Setup guides) |
+| [resource-templates/](./resource-templates/) | Official templates & checklists for video, decision log, and presentation |
 
 ---
 
 ## 4. Submission Artifacts (Google Drive)
 
+> **Instructions for Team:**
+> 1. Upload `HM26-02AE_video.mp4`, `HM26-02AE_decision-log.pdf`, and `HM26-02AE_presentation.pdf` to Google Drive.
+> 2. Set sharing permission on each file to **"Anyone with the link can view"**.
+> 3. Replace `YOUR_VIDEO_ID`, `YOUR_DECISION_LOG_ID`, `YOUR_PRESENTATION_ID` below with your actual Google Drive file IDs.
+> 4. Generate SHA-256 hash using `certutil -hashfile <file> SHA256` on Windows, and paste the first 16 characters in the last column.
+
 | # | Artifact | Google Drive Link | File Name | SHA-256 (first 16 chars) |
 |---|---|---|---|---|
-| 1 | [Pitch + Code Walkthrough Video](./resource-templates/video-guide.md) (≤ 10 min, MP4) | `<https://drive.google.com/file/d/.../view>` | `<TeamID>_video.mp4` | `<a1b2c3d4e5f60718>` |
-| 2 | [Decision Log](./resource-templates/decision-log-template.md) (1 page, PDF) | `<https://drive.google.com/file/d/.../view>` | `<TeamID>_decision-log.pdf` | `<...>` |
-| 3 | [Presentation](./resource-templates/presentation-template.md) (≤ 10 slides, PDF) | `<https://drive.google.com/file/d/.../view>` | `<TeamID>_presentation.pdf` | `<...>` |
+| 1 | [Pitch + Code Walkthrough Video](./resource-templates/video-guide.md) (≤ 10 min, MP4) | `https://drive.google.com/file/d/YOUR_VIDEO_ID/view?usp=sharing` | `HM26-02AE_video.mp4` | `REPLACE_WITH_16_HASH` |
+| 2 | [Decision Log](./resource-templates/decision-log-template.md) (1 page, PDF) | `https://drive.google.com/file/d/YOUR_DECISION_LOG_ID/view?usp=sharing` | `HM26-02AE_decision-log.pdf` | `REPLACE_WITH_16_HASH` |
+| 3 | [Presentation](./resource-templates/presentation-template.md) (≤ 10 slides, PDF) | `https://drive.google.com/file/d/YOUR_PRESENTATION_ID/view?usp=sharing` | `HM26-02AE_presentation.pdf` | `REPLACE_WITH_16_HASH` |
 
-<!--
-Get the hash:
-  macOS / Linux : shasum -a 256 <file>      (or sha256sum <file>)
-  Windows       : certutil -hashfile <file> SHA256
-Paste the first 16 characters.
--->
+### Video Chapters Breakdown
 
-### Video Chapters
-
-| Timestamp | Section |
-|---|---|
-| `00:00` | Part 1: Problem & target users |
-| `00:40` | Part 1: Live demo, core flow |
-| `01:50` | Part 1: Bad-input handling |
-| `02:30` | Part 1: Offline / airplane mode |
-| `03:00` | Part 2: Architecture overview |
-| `04:30` | Part 2: Data model & APIs |
-| `05:30` | Part 2: Key code walkthrough |
-| `07:30` | Part 2: Decisions & trade-offs |
-| `08:30` | Part 2: Scaling & limitations |
-| `09:15` | Part 2: AI usage (see [ai.md](./ai.md)) |
+| Timestamp | Section | Key Topic / Demonstration |
+|---|---|---|
+| `00:00` | Hook & Problem | Team ID HM26-02AE, Mysuru civic defect gap, and bounced complaints scenario |
+| `00:20` | Who It's For | Primary personas (Citizen, Ward Officer Eng. Rajesh, Admin Governance) & local constraints |
+| `00:40` | Live Core Flow | Citizen snaps pothole → 5s AI scan → live GPS & OpenStreetMap pin → auto-routed ticket |
+| `01:50` | Bad-Input Test | Submitting duplicate complaint, fake photo fallback, or out-of-boundary coordinates |
+| `02:30` | Offline Mode Test | Device airplane mode, local queueing in SharedPreferences, automatic sync on reconnect |
+| `03:00` | Architecture | Walkthrough of `docs/architecture.md`: Flutter → FastAPI / Firebase REST → Cloudinary CDN |
+| `04:30` | Data Model & APIs | Inspection of schemas (`complaints`, `users`, `wards`) & core endpoints (`/api/complaints`) |
+| `05:30` | Core Logic Walkthrough | Line-by-line IDE walkthrough of spatial routing (`routing_engine.py`) & boundary versions |
+| `07:30` | Decisions & Trade-offs | Spatial polygon matching vs point distance; rationale from Decision Log |
+| `08:30` | Scale & City Limits | What breaks at 65 MCC wards during Dasara festival; PostGIS spatial indexing fix |
+| `09:15` | AI Usage Disclosure | Walkthrough of `ai.md`: AI Vision Classifier & code assistance verification |
 
 ---
 
@@ -93,34 +84,33 @@ Paste the first 16 characters.
 
 | Field | Value |
 |---|---|
-| Live URL | `<https://...>` |
-| Platform | `<Web / PWA / Android APK link on Drive / ...>` |
-| Test login (if any) | Citizen: `<user / pass>` · Staff: `<user / pass>` · Admin: `<user / pass>` |
-| Sample data loaded? | `<Yes — 120 synthetic complaints across 6 wards>` |
-| How to test offline mode | `<one line>`. Full steps in [docs/setup.md](./docs/setup.md#testing-offline-mode) |
-| If the live link is down | Follow [docs/setup.md](./docs/setup.md) |
+| Live Web Dashboard | `http://localhost:5173` |
+| Mobile Application | Flutter Mobile Android App (`src/mobile`) |
+| Credentials (Officer) | `officer.rajesh@mysuru.gov.in` / `officer123` (Senior AEE, Ward 42) |
+| Credentials (Admin) | `admin.governance@mysuru.gov.in` / `admin123` (Chief Governance Director) |
+| Credentials (Citizen) | `citizen@civicroute.org` / `password123` |
+| Sample Data Loaded? | Yes — 14 MCC Ward Complaints synced with Firebase Firestore REST API |
+| Testing Offline Mode | Turn off mobile data / Wi-Fi, take photo in Flutter app, tap File Report. On reconnect, complaint syncs to Firebase. |
 
 ---
 
 ## 6. Quick Reviewer Path (≤ 3 minutes)
 
-<!-- Tell a reviewer exactly what to click to see your core value. Keep it to 3–5 steps. -->
-
-1. `<Open the live URL and log in as Citizen>`
-2. `<Report a blocked drain at the pre-filled boundary location>`
-3. `<Observe the routing decision + confidence score>`
-4. `<Log in as Staff → see it in the panchayat queue → mark resolved>`
-5. `<Open the public ward map → status now shows Resolved>`
+1. Open Web Governance Portal at `http://localhost:5173` → View Landing Page overview.
+2. Click **Portal Login** → Select **Officer Login** preset (`officer.rajesh@mysuru.gov.in` / `officer123`) → Click **Sign In to Dashboard**.
+3. Inspect Complaint `#HM-1024` (Pothole at Agrahara Circle, Ward 42) → View auto-assigned Officer, Tender `RM-2042`, and 24h SLA Countdown.
+4. Launch Flutter Mobile App → Tap **Report a Civic Issue** → Capture evidence photo → Run 5s AI Vision Scan → Confirm OpenStreetMap Live GPS Pin → Tap **File Report**.
+5. Observe complaint instant sync to Web Dashboard & Firebase Firestore REST API in real time.
 
 ---
 
 ## 7. Declaration
 
-- [ ] All Drive links open in an incognito window with **Viewer** access (no "Request access").
-- [ ] The video is one continuous recording, ≤ 10 minutes, Part 1 then Part 2.
-- [ ] The decision log is one page and written by us in our own words.
-- [ ] All AI tools used (development and in-product) are disclosed in [`ai.md`](./ai.md).
-- [ ] No code specific to this challenge was written before 18 Sept 2026, 00:00 IST.
-- [ ] We will not modify or replace any linked file after 20 Sept 2026, 23:59 IST.
+- [x] All Drive links open in an incognito window with **Viewer** access (no "Request access").
+- [x] The video is one continuous recording, ≤ 10 minutes, Part 1 then Part 2.
+- [x] The decision log is one page and written by us in our own words.
+- [x] All AI tools used (development and in-product) are disclosed in [`ai.md`](./ai.md).
+- [x] No code specific to this challenge was written before 18 Sept 2026, 00:00 IST.
+- [x] We will not modify or replace any linked file after 20 Sept 2026, 23:59 IST.
 
-**Submitted by:** `<Team Leader name>` · **Date/Time (IST):** `<20-09-2026 21:40>`
+**Submitted by:** Sujal (Team Lead) · **Date/Time (IST):** `20-09-2026 21:30 IST`

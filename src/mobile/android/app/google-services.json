@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "570859066509",
+    "project_id": "civicroute-mysuru",
+    "storage_bucket": "civicroute-mysuru.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:570859066509:android:cceff5b4655bfd0b377ec4",
+        "android_client_info": {
+          "package_name": "com.example.civicroute_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "570859066509-lebemj8lbcqh8bgaqlrrubhorvg8k7eu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbtslXXUuMD-Bbo7SP-HYE-SUxeuC5lSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "570859066509-lebemj8lbcqh8bgaqlrrubhorvg8k7eu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
