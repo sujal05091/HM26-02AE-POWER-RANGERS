@@ -61,6 +61,7 @@
 | 1 | [Pitch + Code Walkthrough Video](./resource-templates/video-guide.md) (≤ 10 min, MP4) | [Google Drive Link](https://drive.google.com/file/d/15vyFraj2W1_aopBeed2Kizj-RggI_wvL/view?usp=sharing) | `HM26-02AE_video.mp4` | `15vyFraj2W1_aopB` |
 | 2 | [Decision Log](./resource-templates/decision-log-template.md) (1 page, PDF) | [Google Drive Link](https://drive.google.com/file/d/1GcS-kIINsO7Y1DBmv0Fvw2M9M3SsoU9F/view?usp=sharing) | `HM26-02AE_decision-log.pdf` | `1GcS-kIINsO7Y1DB` |
 | 3 | [Presentation](./resource-templates/presentation-template.md) (≤ 10 slides, PDF) | [Google Drive Link](https://drive.google.com/file/d/14NRtmjvZiooUUkxISjs_xN7GtumIiMD1/view?usp=sharing) | `CivicRoute_HackMysuru_Phase1.pdf` | `14NRtmjvZiooUUkx` |
+| 4 | [Android Mobile App APK](https://drive.google.com/file/d/1_bXJ8C2K8xGJuWbWXm0EgOQxBhFWaBmR/view?usp=sharing) | [Google Drive Link](https://drive.google.com/file/d/1_bXJ8C2K8xGJuWbWXm0EgOQxBhFWaBmR/view?usp=sharing) | `HM26-02AE_app.apk` | `1_bXJ8C2K8xGJuWb` |
 
 ### Video Chapters Breakdown
 
@@ -85,7 +86,7 @@
 | Field | Value |
 |---|---|
 | Live Web Dashboard | [`https://hm-26-02-ae-power-rangers.vercel.app/`](https://hm-26-02-ae-power-rangers.vercel.app/) |
-| Mobile Application | Flutter Mobile Android App (`src/mobile`) · [Download Android APK](https://drive.google.com/file/d/1_bXJ8C2K8xGJuWbWXm0EgOQxBhFWaBmR/view?usp=sharing) |
+| Mobile Application | Flutter Mobile Android App (`src/mobile`) |
 | Credentials (Officer) | `officer.rajesh@mysuru.gov.in` / `officer123` (Senior AEE, Ward 42) |
 | Credentials (Admin) | `admin.governance@mysuru.gov.in` / `admin123` (Chief Governance Director) |
 | Credentials (Citizen) | `citizen@civicroute.org` / `password123` |
