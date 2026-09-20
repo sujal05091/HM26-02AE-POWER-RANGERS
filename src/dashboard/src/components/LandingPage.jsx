@@ -460,17 +460,14 @@ export const LandingPage = ({ onOpenLogin }) => {
               </ul>
             </div>
 
-            <a
-              href={apkDownloadUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none' }}
+            <NeuButton
+              primary
+              onClick={() => window.open(apkDownloadUrl, '_blank')}
+              style={{ width: '100%', padding: '0.95rem', fontSize: '0.98rem', fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem', cursor: 'pointer' }}
             >
-              <NeuButton primary style={{ width: '100%', padding: '0.95rem', fontSize: '0.98rem', fontWeight: 800, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem' }}>
-                <Download size={20} />
-                Download APK from Google Drive →
-              </NeuButton>
-            </a>
+              <Download size={20} />
+              Download APK from Google Drive →
+            </NeuButton>
 
             <div style={{ textAlign: 'center', marginTop: '1.25rem' }}>
               <button
