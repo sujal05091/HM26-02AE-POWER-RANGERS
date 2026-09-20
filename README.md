@@ -1,4 +1,4 @@
-# CivicRoute — Dynamic Civic Infrastructure Routing & Governance Platform
+# CivicRoute — Dynamic Civic Infrastructure Routing & Governance Platform updates
 
 > HackMysuru 1.0 · Phase 1 Submission · Civic Governance & Clean Mysuru  
 > Team **Power Rangers** (`HM26-02AE`)  
