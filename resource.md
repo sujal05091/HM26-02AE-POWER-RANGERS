@@ -58,7 +58,7 @@
 
 | # | Artifact | Google Drive Link | File Name | SHA-256 (first 16 chars) |
 |---|---|---|---|---|
-| 1 | [Pitch + Code Walkthrough Video](./resource-templates/video-guide.md) (≤ 10 min, MP4) | [Google Drive Link](https://drive.google.com/file/d/YOUR_VIDEO_ID/view?usp=sharing) | `HM26-02AE_video.mp4` | `REPLACE_WITH_16_HASH` |
+| 1 | [Pitch + Code Walkthrough Video](./resource-templates/video-guide.md) (≤ 10 min, MP4) | [Google Drive Link](https://drive.google.com/file/d/15vyFraj2W1_aopBeed2Kizj-RggI_wvL/view?usp=sharing) | `HM26-02AE_video.mp4` | `15vyFraj2W1_aopB` |
 | 2 | [Decision Log](./resource-templates/decision-log-template.md) (1 page, PDF) | [Google Drive Link](https://drive.google.com/file/d/1GcS-kIINsO7Y1DBmv0Fvw2M9M3SsoU9F/view?usp=sharing) | `HM26-02AE_decision-log.pdf` | `1GcS-kIINsO7Y1DB` |
 | 3 | [Presentation](./resource-templates/presentation-template.md) (≤ 10 slides, PDF) | [Google Drive Link](https://drive.google.com/file/d/14NRtmjvZiooUUkxISjs_xN7GtumIiMD1/view?usp=sharing) | `CivicRoute_HackMysuru_Phase1.pdf` | `14NRtmjvZiooUUkx` |
 
