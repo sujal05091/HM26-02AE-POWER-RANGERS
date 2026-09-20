@@ -4,7 +4,7 @@ import { NeuButton, NeuBadge } from './NeumorphicUI';
 
 export const LandingPage = ({ onOpenLogin }) => {
   const [showApkModal, setShowApkModal] = useState(false);
-  const [apkDownloadUrl, setApkDownloadUrl] = useState('https://drive.google.com/file/d/YOUR_APK_DRIVE_ID/view?usp=sharing');
+  const [apkDownloadUrl, setApkDownloadUrl] = useState('https://drive.google.com/file/d/1_bXJ8C2K8xGJuWbWXm0EgOQxBhFWaBmR/view?usp=sharing');
 
   return (
     <div style={{ minHeight: '100vh', background: '#e6ecf5', color: '#1e293b', fontFamily: "'Inter', sans-serif" }}>
