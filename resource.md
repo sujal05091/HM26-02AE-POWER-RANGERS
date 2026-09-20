@@ -59,8 +59,8 @@
 | # | Artifact | Google Drive Link | File Name | SHA-256 (first 16 chars) |
 |---|---|---|---|---|
 | 1 | [Pitch + Code Walkthrough Video](./resource-templates/video-guide.md) (≤ 10 min, MP4) | `https://drive.google.com/file/d/YOUR_VIDEO_ID/view?usp=sharing` | `HM26-02AE_video.mp4` | `REPLACE_WITH_16_HASH` |
-| 2 | [Decision Log](./resource-templates/decision-log-template.md) (1 page, PDF) | `https://drive.google.com/file/d/YOUR_DECISION_LOG_ID/view?usp=sharing` | `HM26-02AE_decision-log.pdf` | `REPLACE_WITH_16_HASH` |
-| 3 | [Presentation](./resource-templates/presentation-template.md) (≤ 10 slides, PDF) | `https://drive.google.com/file/d/YOUR_PRESENTATION_ID/view?usp=sharing` | `HM26-02AE_presentation.pdf` | `REPLACE_WITH_16_HASH` |
+| 2 | [Decision Log](./resource-templates/decision-log-template.md) (1 page, PDF) | `https://drive.google.com/file/d/14NRtmjvZiooUUkxISjs_xN7GtumIiMD1/view?usp=sharing` | `HM26-02AE_decision-log.pdf` | `14NRtmjvZiooUUkx` |
+| 3 | [Presentation](./resource-templates/presentation-template.md) (≤ 10 slides, PDF) | `https://drive.google.com/file/d/14NRtmjvZiooUUkxISjs_xN7GtumIiMD1/view?usp=sharing` | `HM26-02AE_presentation.pdf` | `14NRtmjvZiooUUkx` |
 
 ### Video Chapters Breakdown
 
