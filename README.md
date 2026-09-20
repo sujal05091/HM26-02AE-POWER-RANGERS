@@ -1,7 +1,8 @@
 # CivicRoute — Dynamic Civic Infrastructure Routing & Governance Platform
 
 > HackMysuru 1.0 · Phase 1 Submission · Civic Governance & Clean Mysuru  
-> Team **Power Rangers** (`HM26-02AE`)
+> Team **Power Rangers** (`HM26-02AE`)  
+> 🌐 **Live Web Governance Portal:** [`https://hm-26-02-ae-power-rangers.vercel.app/`](https://hm-26-02-ae-power-rangers.vercel.app/)
 
 | 📎 Submission links | 📋 Templates | 🏗️ Architecture | 🛡️ Hard constraints | ⚙️ Setup | 🤖 AI usage | ⚠️ Limitations |
 |---|---|---|---|---|---|---|

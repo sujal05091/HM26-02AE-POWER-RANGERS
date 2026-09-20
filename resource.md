@@ -84,7 +84,7 @@
 
 | Field | Value |
 |---|---|
-| Live Web Dashboard | `http://localhost:5173` |
+| Live Web Dashboard | [`https://hm-26-02-ae-power-rangers.vercel.app/`](https://hm-26-02-ae-power-rangers.vercel.app/) |
 | Mobile Application | Flutter Mobile Android App (`src/mobile`) |
 | Credentials (Officer) | `officer.rajesh@mysuru.gov.in` / `officer123` (Senior AEE, Ward 42) |
 | Credentials (Admin) | `admin.governance@mysuru.gov.in` / `admin123` (Chief Governance Director) |
@@ -96,7 +96,7 @@
 
 ## 6. Quick Reviewer Path (≤ 3 minutes)
 
-1. Open Web Governance Portal at `http://localhost:5173` → View Landing Page overview.
+1. Open Web Governance Portal at [`https://hm-26-02-ae-power-rangers.vercel.app/`](https://hm-26-02-ae-power-rangers.vercel.app/) → View Landing Page overview.
 2. Click **Portal Login** → Select **Officer Login** preset (`officer.rajesh@mysuru.gov.in` / `officer123`) → Click **Sign In to Dashboard**.
 3. Inspect Complaint `#HM-1024` (Pothole at Agrahara Circle, Ward 42) → View auto-assigned Officer, Tender `RM-2042`, and 24h SLA Countdown.
 4. Launch Flutter Mobile App → Tap **Report a Civic Issue** → Capture evidence photo → Run 5s AI Vision Scan → Confirm OpenStreetMap Live GPS Pin → Tap **File Report**.
