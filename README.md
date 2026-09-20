@@ -110,12 +110,14 @@ flutter run -d V2334
 
 ## Team Power Rangers (`HM26-02AE`)
 
-| Name | Role | GitHub |
-|---|---|---|
-| **Sujal** (Lead) | Full Stack & Routing Engine | `@sujal` |
-| **Team Member 2** | Web Governance Portal & UI/UX | `@member2` |
-| **Team Member 3** | FastAPI Backend & Firebase Sync | `@member3` |
-| **Team Member 4** | Mobile App & Spatial Geofencing | `@member4` |
+**Institution:** Shri Madhwa Vadiraja Institute of Technology & Management (SMVITM), Bantakal, Udupi
+
+| # | Name | Program & Year | Role | GitHub |
+|---|---|---|---|---|
+| 1 | **Sujal** (Lead) | B.E. AI & DS, 4th yr | Full Stack, Flutter App & Spatial Routing Engine | [`@sujal`](https://github.com/sujal05091) |
+| 2 | **Hitesh A** | B.E. AI & DS, 4th yr | Web Governance Portal & UI/UX Architecture | [`@Hiteshacu`](https://github.com/Hiteshacu) |
+| 3 | **Shama Patwardhan** | B.E. AI & DS, 4th yr | FastAPI Backend, Firebase Sync & Cloudinary CDN | [`@Shama-patwardhan`](https://github.com/Shama-patwardhan) |
+| 4 | **Yathika P Amin** | B.E. AI & DS, 4th yr | Mobile App Testing, AI Classifier & Spatial Geofencing | [`@yathikapamin`](https://github.com/yathikapamin) |
 
 ---
 
